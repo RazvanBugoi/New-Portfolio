@@ -51,7 +51,7 @@ img {
 /* background color divs */
 
 .section-plum {
-  background-color: var(--plum);
+  background-color: var(--white);
 }
 
 .section-dkblue {
@@ -262,23 +262,6 @@ nav [class*="fa-"]:hover {
   }
 }
 
-/* contact section */
-
-#contact {
-  width: 400px;
-  text-align: center;
-  margin: 0 auto;
-  padding: 3rem 0;
-}
-
-#contact p:last-child {
-  margin-top: 3rem;
-}
-
-#contact h2,
-#contact p {
-  color: var(--black);
-}
 
 /* footer section */
 footer {
@@ -296,6 +279,91 @@ footer ul {
   gap: 3rem;
   font-size: 3rem;
 }
+
+/* contact section */
+
+#contact {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 3rem 0;
+  border-radius: 1em;
+}
+
+#contact p{
+  margin: 2rem 0;
+}
+
+#contact h2,
+#contact p,
+#contact label,
+#submit-button {
+  color: var(--black);
+}
+
+#contact ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* To make sure that all labels have the same size and are properly aligned*/
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font by default */
+  font: 1em var(--sans);
+  /* To give the same size to all text fields */
+  width: 300px;
+}
+
+input:focus,
+textarea:focus {
+  /* To give a little highlight on active elements */
+  border-color: var(--black);
+}
+
+textarea {
+  /* To properly align multiline text fields with their labels */
+  vertical-align: top;
+  /* To give enough room to type some text */
+  height: 8rem;
+}
+
+#submit-button {
+  font-weight: bold;
+  font-size: calc(var(--font-size) * 0.75);
+  padding: 0.8rem;
+  background-color: var(--magenta);
+  color: var(--black);
+  border-radius: 5px;
+  font-family: var(--mono);
+}
+
+.submit-button-wrapper{
+  text-align: left;
+  margin-left: 0.5em;
+  padding-left: 90px;
+}
+
+#submit-button:hover {
+  cursor: pointer;
+}
+
+
+.button:hover {
+  color: var(--black);
+  background-color: var(--hotmag);
+} */
 
 /* about section */
 
