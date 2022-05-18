@@ -262,7 +262,6 @@ nav [class*="fa-"]:hover {
   }
 }
 
-
 /* footer section */
 footer {
   text-align: center;
@@ -363,7 +362,7 @@ textarea {
 .button:hover {
   color: var(--black);
   background-color: var(--hotmag);
-} */
+}
 
 /* about section */
 
